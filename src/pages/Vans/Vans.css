@@ -1,0 +1,122 @@
+.van-list-container {
+  padding-inline: clamp(1rem, 5vw, 2rem);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.van-tile {
+  transition: var(--transition);
+}
+
+.van-tile a {
+  color: var(--text-dark);
+  text-decoration: none;
+  display: block;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.van-tile a:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.van-tile img {
+  width: 100%;
+  height: clamp(150px, 30vw, 250px);
+  object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.van-tile .van-info {
+  padding: clamp(1rem, 2vw, 1.5rem);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.van-tile h3 {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.van-tile p {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  color: var(--text-gray);
+  margin: 0;
+}
+
+.van-tile p span {
+  font-size: 0.85em;
+}
+
+.van-type {
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+  font-style: normal;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: var(--bg-light);
+  color: var(--text-gray);
+  transition: var(--transition);
+  cursor: pointer;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+}
+
+.van-type:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.van-type:focus {
+  outline: none;
+}
+
+.van-type.selected {
+  color: white;
+}
+
+.van-type.simple:hover,
+.van-type.simple.selected {
+  background-color: var(--color-simple);
+  box-shadow: 0 4px 12px rgba(225, 118, 84, 0.3);
+}
+
+.van-type.rugged:hover,
+.van-type.rugged.selected {
+  background-color: var(--color-rugged);
+  box-shadow: 0 4px 12px rgba(17, 94, 89, 0.3);
+}
+
+.van-type.luxury:hover,
+.van-type.luxury.selected {
+  background-color: var(--color-luxury);
+  box-shadow: 0 4px 12px rgba(22, 22, 22, 0.3);
+}
+
+.van-type.clear-filters {
+  background-color: transparent;
+  color: var(--text-gray);
+  border: 2px solid var(--text-gray);
+}
+
+.van-type.clear-filters:hover {
+  color: var(--primary-orange);
+  border-color: var(--primary-orange);
+  background-color: rgba(255, 140, 56, 0.05);
+  transform: translateY(-2px);
+}
+
+i[class*='van-type-'] {
+  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.8rem, 1.5vw, 1rem);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}

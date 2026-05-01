@@ -1,0 +1,13 @@
+footer {
+  background: linear-gradient(135deg, #161616 0%, #2d2d2d 100%);
+  color: var(--text-light);
+  min-height: 80px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 500;
+  padding: 1.5rem;
+  text-align: center;
+}

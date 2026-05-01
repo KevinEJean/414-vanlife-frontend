@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-orange: #FF8C38;
+  --primary-dark: #161616;
+  --primary-light: #FFF7ED;
+  --text-dark: #161616;
+  --text-gray: #4D4D4D;
+  --text-light: #AAAAAA;
+  --color-simple: #E17654;
+  --color-rugged: #115E59;
+  --color-luxury: #161616;
+  --bg-light: #FFEAD0;
+  --bg-accent: #FFCC8D;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --border-radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-light);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+nav {
+  display: flex;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.nav-button {
+  text-decoration: none;
+  color: var(--text-gray);
+  font-weight: 600;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem);
+  border-radius: 8px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--primary-orange);
+}
+
+.nav-button:hover {
+  color: var(--text-dark);
+  background-color: rgba(255, 140, 56, 0.08);
+}
+
+main {
+  margin-bottom: clamp(2rem, 5vh, 5rem);
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: clamp(0.625rem, 2vh, 0.875rem) clamp(1rem, 3vw, 1.5rem);
+  color: initial;
+  font-weight: 700;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.back-button {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-top: 60px;
+  margin-left: 26px;
+}
+
+.back-button span:hover {
+  text-decoration: underline;
+}
+
+.host-van-detail-info>h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.red {
+  color: #cc0000;
+}

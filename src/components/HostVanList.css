@@ -1,0 +1,54 @@
+.host-vans-list {
+  padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+.host-vans-title {
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.host-van-single {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  background: white;
+  margin-bottom: clamp(0.75rem, 2vh, 1.25rem);
+  padding: clamp(1rem, 2vh, 1.5rem) clamp(1rem, 3vw, 1.5rem);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid #f0f0f0;
+}
+
+.host-van-single:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.host-van-single>img {
+  height: clamp(60px, 12vw, 100px);
+  width: clamp(60px, 12vw, 100px);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.host-van-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.host-van-info h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.host-van-info p {
+  margin: 0;
+  color: var(--text-gray);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}

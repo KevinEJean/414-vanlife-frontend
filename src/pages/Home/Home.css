@@ -1,0 +1,53 @@
+/*** HOME PAGE ***/
+.home-container {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%), url("/src/assets/images/home-hero.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: clamp(300px, 60vh, 500px);
+  color: white;
+  padding: clamp(2rem, 5vh, 4rem) clamp(1.5rem, 5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.home-container h1 {
+  font-weight: 800;
+  font-size: clamp(1.75rem, 6vw, 2.75rem);
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+.home-container p {
+  line-height: 1.8;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  max-width: 500px;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.home-container a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--primary-orange);
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  padding: clamp(0.75rem, 2vh, 1rem) 2rem;
+  color: white;
+  font-weight: 700;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+}
+
+.home-container a:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  background-color: #f07c2b;
+}

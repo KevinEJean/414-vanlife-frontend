@@ -1,0 +1,6 @@
+.host-nav {
+  display: flex;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  padding: 1rem;
+  flex-wrap: wrap;
+}

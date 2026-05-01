@@ -1,0 +1,25 @@
+.status-view {
+  min-height: 412px;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 14px;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.spinner {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+
+  border: 5px solid rgba(255, 255, 255, 0.16);
+  border-top-color: var(--primary-orange);
+  animation: spin 0.85s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

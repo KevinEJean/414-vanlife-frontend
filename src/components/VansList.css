@@ -1,0 +1,34 @@
+.van-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: clamp(2rem, 4vh, 3rem);
+}
+
+@media (max-width: 768px) {
+  .van-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .van-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.van-list-container button {
+  margin-right: clamp(0.75rem, 2vw, 1.25rem);
+  cursor: pointer;
+}
+
+.van-list-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  margin-bottom: clamp(1.5rem, 3vh, 2rem);
+}
+
+.van-list-filter-buttons>a {
+  text-decoration: none;
+}

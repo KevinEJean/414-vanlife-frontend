@@ -1,0 +1,106 @@
+.host-dashboard-earnings>.info>h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+}
+
+.host-dashboard-earnings>.info>p {
+  color: var(--text-gray);
+  margin: 0 0 1rem 0;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.host-dashboard-earnings>.info>p>span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.host-dashboard-earnings>.info>h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: var(--text-dark);
+  font-weight: 900;
+}
+
+.host-dashboard-earnings {
+  background: linear-gradient(135deg, #FFEAD0 0%, #FFB84D 100%);
+  padding: clamp(1.5rem, 3vh, 2.5rem) clamp(1rem, 4vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vh, 1.5rem);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  margin: clamp(1.5rem, 3vh, 2rem) clamp(1rem, 4vw, 2rem);
+}
+
+@media (min-width: 768px) {
+  .host-dashboard-earnings {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.host-dashboard-reviews {
+  background: linear-gradient(135deg, #FFDDB2 0%, #FFCC8D 100%);
+  padding: clamp(1.5rem, 3vh, 2.5rem) clamp(1rem, 4vw, 2rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  align-items: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  margin: clamp(1rem, 3vh, 1.5rem) clamp(1rem, 4vw, 2rem);
+}
+
+.host-dashboard-reviews>h2 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+}
+
+.host-dashboard-reviews .star {
+  color: var(--primary-orange);
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
+}
+
+.host-dashboard-reviews p {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: var(--text-gray);
+  margin-right: auto;
+}
+
+.host-dashboard-reviews p>span {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.host-dashboard-vans {
+  padding: clamp(1.5rem, 3vh, 2.5rem) clamp(1rem, 4vw, 2rem);
+}
+
+.host-dashboard-vans>.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: clamp(1rem, 2vh, 1.5rem);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.host-dashboard-vans>.top h2 {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 800;
+  margin: 0;
+}
+
+.host-dashboard-vans>.top a {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.host-dashboard-vans .host-vans-list {
+  padding-inline: 0;
+}

@@ -1,0 +1,76 @@
+.host-income {
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  color: var(--text-dark);
+}
+
+.host-income>p {
+  color: var(--text-gray);
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+}
+
+.host-income>p span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.host-income>h2 {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: var(--text-dark);
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+img.graph {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin-bottom: clamp(1.5rem, 3vh, 2rem);
+}
+
+.host-income .info-header>p {
+  color: var(--text-gray);
+  margin-bottom: 0.5rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+}
+
+.host-income .info-header>p span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.host-income .info-header>h3 {
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  margin: clamp(1.5rem, 3vh, 2rem) 0 1rem 0;
+}
+
+.host-income .transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: white;
+  margin-bottom: clamp(1rem, 2vh, 1.5rem);
+  padding: clamp(1.5rem, 2vh, 2rem) clamp(1rem, 3vw, 1.5rem);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.host-income .transaction:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.host-income .transaction>h3 {
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+.host-income .transaction>p {
+  font-weight: 600;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--text-gray);
+  margin: 0;
+}

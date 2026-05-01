@@ -1,0 +1,44 @@
+header {
+  height: clamp(80px, 12vh, 110px);
+  display: flex;
+  align-items: center;
+  padding-inline: clamp(1rem, 5vw, 2rem);
+  background-color: var(--primary-light);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .site-logo {
+  color: var(--text-dark);
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  letter-spacing: -1px;
+}
+
+
+header form {
+  display: flex;
+  align-items: center;
+}
+
+header form button {
+  background-color: var(--primary-orange);
+  color: white;
+  border: none;
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: "Inter", sans-serif;
+}
+
+header form button:hover {
+  background-color: #f07c2b;
+  box-shadow: var(--shadow-md);
+}
